@@ -1,3 +1,6 @@
+<h1>Training to Interview</h1>
+
+
 <h2>Constraints</h2>
 **Constraints (cheklovlar)** — bu ma'lumotlar bazasidagi ma'lumotlarning yaxlitligi va to'g'riligini ta'minlash uchun ishlatiladigan qoidalar. Masalan, `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE`, `NOT NULL`, va `CHECK` kabi cheklovlar mavjud.
 
