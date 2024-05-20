@@ -3,11 +3,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PersonalBrand.Application.Abstractions;
 using PersonalBrand.Infrastructure.Persistance;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PersonalBrand.Infrastructure
 {
