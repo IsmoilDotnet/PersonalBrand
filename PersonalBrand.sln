@@ -7,13 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4DBBBBF7-7D9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PersonalBrand", "PersonalBrand", "{A386BA09-2255-4B91-9201-5432C81D38B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBrand.Domain", "src\PersonalBrand\PersonalBrand.Domain\PersonalBrand.Domain.csproj", "{C54E4FE2-4997-42D0-B24D-98FEEE15452D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalBrand.Domain", "src\PersonalBrand\PersonalBrand.Domain\PersonalBrand.Domain.csproj", "{C54E4FE2-4997-42D0-B24D-98FEEE15452D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBrand.Application", "src\PersonalBrand\PersonalBrand.Application\PersonalBrand.Application.csproj", "{0084E7AC-3BCD-4267-935E-2911B56840A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalBrand.Application", "src\PersonalBrand\PersonalBrand.Application\PersonalBrand.Application.csproj", "{0084E7AC-3BCD-4267-935E-2911B56840A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBrand.Infrastructure", "src\PersonalBrand\PersonalBrand.Infrastructure\PersonalBrand.Infrastructure.csproj", "{E75E993D-EE7F-4EE3-BC84-88CC9D978774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalBrand.Infrastructure", "src\PersonalBrand\PersonalBrand.Infrastructure\PersonalBrand.Infrastructure.csproj", "{E75E993D-EE7F-4EE3-BC84-88CC9D978774}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBrand.API", "src\PersonalBrand\PersonalBrand.API\PersonalBrand.API.csproj", "{AF7B989A-E8C3-4EFB-A1F2-432A2C7E7241}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalBrand.API", "src\PersonalBrand\PersonalBrand.API\PersonalBrand.API.csproj", "{AF7B989A-E8C3-4EFB-A1F2-432A2C7E7241}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{CD8D5F1F-50B4-454A-B233-B9D70D303903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "src\Identity\Identity.API\Identity.API.csproj", "{9B300585-F4B8-414F-83B4-C74ADF1F9D56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{AF7B989A-E8C3-4EFB-A1F2-432A2C7E7241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7B989A-E8C3-4EFB-A1F2-432A2C7E7241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7B989A-E8C3-4EFB-A1F2-432A2C7E7241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B300585-F4B8-414F-83B4-C74ADF1F9D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B300585-F4B8-414F-83B4-C74ADF1F9D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B300585-F4B8-414F-83B4-C74ADF1F9D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B300585-F4B8-414F-83B4-C74ADF1F9D56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +55,8 @@ Global
 		{0084E7AC-3BCD-4267-935E-2911B56840A2} = {A386BA09-2255-4B91-9201-5432C81D38B2}
 		{E75E993D-EE7F-4EE3-BC84-88CC9D978774} = {A386BA09-2255-4B91-9201-5432C81D38B2}
 		{AF7B989A-E8C3-4EFB-A1F2-432A2C7E7241} = {A386BA09-2255-4B91-9201-5432C81D38B2}
+		{CD8D5F1F-50B4-454A-B233-B9D70D303903} = {4DBBBBF7-7D90-4CCB-9229-C104968DAEAC}
+		{9B300585-F4B8-414F-83B4-C74ADF1F9D56} = {CD8D5F1F-50B4-454A-B233-B9D70D303903}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {768BA7E4-0D1B-4E4B-96D8-B09F5B0A8D23}
