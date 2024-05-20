@@ -9,6 +9,7 @@ namespace PersonalBrand.Domain.Entities
 {
     public class UserModel : IdentityUser, IAuditable
     {
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTimeOffset CreatedDate { get; set; } = DateTimeOffset.UtcNow;

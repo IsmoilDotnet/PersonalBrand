@@ -14,11 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\IdentityCases\Handlers\QueryHandlers\" />
-    <Folder Include="UseCases\IdentityCases\Queries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PersonalBrand.Domain\PersonalBrand.Domain.csproj" />
   </ItemGroup>
 
