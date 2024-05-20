@@ -5,7 +5,7 @@
 **Constraints (cheklovlar)** — bu ma'lumotlar bazasidagi ma'lumotlarning yaxlitligi va to'g'riligini ta'minlash uchun ishlatiladigan qoidalar. Masalan, `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE`, `NOT NULL`, va `CHECK` kabi cheklovlar mavjud.
 
 Misol qilib ketiradigan bosek:
-```
+```csharp
 public class Product
 {
     [Key]
