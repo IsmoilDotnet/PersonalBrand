@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PersonalBrand.Application.UseCases.IdentityCases.Commands;
 using PersonalBrand.Application.UseCases.IdentityCases.Queries;
@@ -32,7 +31,7 @@ namespace PersonalBrand.API.Controllers
 
             return Ok(result);
         }
-        
+
         [HttpPut]
         public async Task<IActionResult> Update(UpdateUserCommand updateUserCommand)
         {

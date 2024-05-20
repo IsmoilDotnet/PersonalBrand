@@ -1,7 +1,6 @@
 ﻿using Identity.API.Models;
 using Identity.API.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PersonalBrand.Domain.Entities;
@@ -138,7 +137,7 @@ namespace Identity.API.Controllers
                     FirstName = model.FirstName,
                     LastName = model.LastName,
                     Email = model.Email,
-                   
+
                 };
 
                 var res = await _userManager.CreateAsync(user);

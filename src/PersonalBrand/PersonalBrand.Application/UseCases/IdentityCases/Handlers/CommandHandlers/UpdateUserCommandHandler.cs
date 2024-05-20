@@ -1,26 +1,26 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Caching.Memory;
 using PersonalBrand.Application.UseCases.IdentityCases.Commands;
 using PersonalBrand.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PersonalBrand.Application.UseCases.IdentityCases.Handlers.CommandHandlers
 {
     public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, ResponseModel>
     {
         private readonly UserManager<UserModel> _userManager;
+        private readonly IMemoryCache _memoryCache;
 
-        public UpdateUserCommandHandler(UserManager<UserModel> userManager)
+        public UpdateUserCommandHandler(UserManager<UserModel> userManager, IMemoryCache memoryCache)
         {
             _userManager = userManager;
+            _memoryCache = memoryCache;
         }
 
         public async Task<ResponseModel> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
         {
+            _memoryCache.Remove("users");
+
             var user = await _userManager.FindByEmailAsync(request.Email);
 
             if (user != null)
