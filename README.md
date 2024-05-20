@@ -26,7 +26,7 @@ public class Product
 LINQ (Language Integrated Query) — bu .NET tilida yozilgan kod orqali ma'lumotlarni so'rov qilish va manipulyatsiya qilish imkonini beruvchi texnologiya. LINQ ma'lumotlar bazalari, XML hujjatlar, kollektsiyalar va boshqa manbalardan ma'lumotlarni olish uchun ishlatiladi.
 
 Misol uchun:
-```
+```csharp
 List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var evenNumbers = from number in numbers
                   where number % 2 == 0
@@ -46,7 +46,7 @@ bu misolda list ichidagi sonlarni LINQ yordamida sortlamoqdamiz
 Stack (stack) — bu ma'lumotlarni LIFO (Last In, First Out — oxirgi kirgan, birinchi chiqadi) tamoyili asosida saqlaydigan ma'lumotlar tuzilmasi.
 
 Misol uchun:
-```
+```csharp
 Stack<int> stack = new Stack<int>();
 stack.Push(1);
 stack.Push(2);
@@ -58,7 +58,7 @@ Console.WriteLine(stack.Pop()); // 2
 Queue (queue) — bu ma'lumotlarni FIFO (First In, First Out — birinchi kirgan, birinchi chiqadi) tamoyili asosida saqlaydigan ma'lumotlar tuzilmasi.
 
 Misol:
-```
+```csharp
 Queue<int> queue = new Queue<int>();
 queue.Enqueue(1);
 queue.Enqueue(2);
@@ -71,7 +71,7 @@ Console.WriteLine(queue.Dequeue()); // 2
 Try-Catch — bu dasturda xatoliklar yuz berganda ularni tutish va qayta ishlash uchun ishlatiladigan konstruktsiya. `try` blokida xatolik yuz berishi mumkin bo'lgan kod yoziladi, `catch` blokida esa ushbu xatolikni tutish va unga munosabat bildirish uchun kod yoziladi.
 
 Misol:
-```
+```csharp
 try
 {
     int a = 10;
@@ -88,7 +88,7 @@ catch (DivideByZeroException ex)
 SQL (Structured Query Language) — bu ma'lumotlar bazalarini boshqarish va ulardagi ma'lumotlarni olish uchun ishlatiladigan maxsus til. SQL yordamida ma'lumotlarni kiritish, yangilash, o'chirish va so'rov qilish mumkin.
 
 Oddiy misol:
-```
+```sql
 SELECT * FROM Products WHERE Price > 100;
 ```
 
@@ -97,7 +97,7 @@ Trigger — bu ma'lumotlar bazasidagi biror hodisa yuz berganda (masalan, jadval
 
 Misol uchun:
 
-```
+```sql
 CREATE TRIGGER trgAfterInsert
 ON Products
 FOR INSERT
@@ -111,7 +111,7 @@ END
 Composite Key (kompozit kalit) — bu bir nechta ustun birgalikda jadvalning biror yozuvini noyob tarzda aniqlash uchun ishlatiladigan birlashma kalit.
 
 Misol:
-```
+```csharp
 public class OrderDetail
 {
     [Key, Column(Order = 0)]
@@ -131,7 +131,7 @@ Mediator Notifications — bu Mediator dizayn andozasida ishlatiladigan mexanizm
 Func metodlar — bu .NET ecosystemda ishlatiladigan vakil turlari bo'lib, ular bir yoki bir nechta argumentni qabul qiladi va qiymat qaytaradi. `Func` tipidagi vakillar 0 dan 16 tagacha argument qabul qilishi mumkin.
 
 Misol:
-```
+```csharp
 Func<int, int, int> add = (a, b) => a + b;
 Console.WriteLine(add(3, 4)); // 7
 ```
@@ -139,7 +139,7 @@ Console.WriteLine(add(3, 4)); // 7
 Database Indexes (ma'lumotlar bazasi indekslari) — bu jadvaldagi qatorlarni tezkor qidirish va tartiblash uchun ishlatiladigan ma'lumotlar tuzilmasi. Indekslar so'rovlarning bajarilish tezligini oshiradi.
 
 Misol:
-```
+```sql
 CREATE INDEX idx_product_name ON Products (ProductName);
 ```
 
@@ -150,7 +150,7 @@ Design Patterns — bu dasturiy ta'minot muammolarini samarali hal qilish uchun 
 SQL Joins — bu bir nechta jadvallardagi ma'lumotlarni birlashtirish uchun ishlatiladigan SQL amallari. `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, va `FULL JOIN` kabi turli xil birlashtirishlar mavjud.
 
 Inner Joinga misol keltiradigan bolsak:
-```
+```sql
 SELECT Orders.OrderID, Customers.CustomerName
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
@@ -160,7 +160,7 @@ INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 Views — bu SQL so'rovlari natijalarini saqlash va qayta ishlatish uchun yaratilgan virtual jadvallar. Ko'rinishlar jadvallarni qayta-qayta yozmasdan ulardan ma'lumotlarni olish imkonini beradi.
 
 Misol uchun:
-```
+```sql
 CREATE VIEW ProductView AS
 SELECT ProductName, Price FROM Products WHERE Price > 100;
 ```
@@ -172,7 +172,7 @@ Nega Bizga Viewlar Kerak — ko'rinishlar ma'lumotlar bazasida xavfsizlikni oshi
 Foreign Key — bu bir jadvaldagi ustunning boshqa jadvaldagi biror ustunga bog'langanligini ko'rsatuvchi kalit. Tashqi kalitlar jadvallar o'rtasidagi bog'lanishni va ma'lumotlarning yaxlitligini ta'minlaydi.
 
 Misol:
-```
+```csharp
 public class Order
 {
     [Key]
